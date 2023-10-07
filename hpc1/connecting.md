@@ -13,6 +13,6 @@ If you are connected to the HKUST(GZ) network, you can connect to the server usi
 ## Off campus
 To use the server from outside the HKUST(GZ) network, you should first connect to the HKUST(GZ) VPN. Visit [https://remote.hkust-gz.edu.cn](https://remote.hkust-gz.edu.cn) to start. Once you are connected to the HKUST(GZ) VPN, you can log in the server using SSH.
 
-## Note
-Please note that you are now connected to the login node of the HPC system, not the computing nodes. The login node is used to provide login service to all users. It is fine to do light interactive work such as editing the source code, setting up experiments, or compiling the code on the login node. But please **do not** run CPU- or memory-intensive jobs on the login node -- that will significantly degrade the performance of the login node and affect all users. You should allocate those heavy computing jobs to the computing nodes (see [Running jobs](running_jobs.html) for instructions).
+{: .note .mt-8 }
+>Please note that you are now connected to the login node of the HPC system, not the computing nodes. The login node is used to provide login service to all users. It is fine to do light interactive work such as editing the source code, setting up experiments, or compiling the code on the login node. But please **do not** run CPU- or memory-intensive jobs on the login node -- that will significantly degrade the performance of the login node and affect all users. You should allocate those heavy computing jobs to the computing nodes (see [Running jobs](running_jobs.html) for instructions).
 

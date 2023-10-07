@@ -6,3 +6,10 @@ url: https://qingli411.github.io/eesrf-hpc-user-guide
 
 aux_links:
   View page source: https://github.com/qingli411/eesrf-hpc-user-guide
+
+callouts:
+  note:
+    title: Note
+    color: purple
+    opacity: 0.3
+
