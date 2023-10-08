@@ -11,7 +11,7 @@ nav_order: 2
 
 [Lmod](https://lmod.readthedocs.io/en/latest/index.html) is a Lua based module system that helps manage the user environment (`PATH`, `LD_LIBRARY_PATH` etc.) through module files. It supports hierarchical `MODULEPATH`. We use Lmod to provide and manage different versions of libraries compiled by different combinations of compilers and MPI libraries.
 
-## Some useful `module` command
+## Some useful `module` commands
 
 | --------------------------------- | --------------------------------------------------------------------- |
 | Command                           | Description                                                           |
@@ -33,7 +33,7 @@ nav_order: 2
 | `module unuse [path]`             | Remove path from `MODULEPATH`                                         |
 | --------------------------------- | --------------------------------------------------------------------- |
 
-Like many other command in Linux, you can use `man module` or `module --help` to find more instructions on how to use it. See also [here](https://lmod.readthedocs.io/en/latest/010_user.html) for a user guide for Lmod.
+Like many other commands in Linux, you can use `man module` or `module --help` to find more instructions on how to use it. See also [here](https://lmod.readthedocs.io/en/latest/010_user.html) for a user guide for Lmod.
 
 ## Modules on this machine
 

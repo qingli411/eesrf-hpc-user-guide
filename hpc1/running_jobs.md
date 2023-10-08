@@ -65,7 +65,7 @@ Connection closed by 110.1.1.104 port 22
 ```
 
 
-## Other useful Slurm command
+## Other useful Slurm commands
 
 * `sinfo` shows the state of partitions and nodes managed by Slurm. For example, to check the state of all 22 nodes in partition1 (we currently only have one partition), run
 
