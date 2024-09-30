@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Environment
-parent: HPC 01
+parent: HPC1
 nav_order: 2
 ---
 

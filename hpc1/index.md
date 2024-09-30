@@ -1,11 +1,11 @@
 ---
 layout: home
-title: HPC 01
+title: HPC1
 nav_order: 2
 has_children: true
 ---
 
-# HPC 01
+# HPC1
 
 ## Overview
 This first HPC server at EESRF has 22 computing nodes connected by InfiniBand network. Each computing node has two Intel Xeon Gold 6348 CPU @ 2.60GHz (56 CPU cores per node) and 256GB of DDR4 memory. In total, there are 1232 CPU cores in the system. The total available storage is ~300TB, shared by all users and mounted at `/public`. We currently have users' home directory in `/public/home` and a shared space for common data used by multiple users (e.g., input data for CESM) in `/public/project`.

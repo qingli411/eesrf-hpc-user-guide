@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Running jobs
-parent: HPC 01
+parent: HPC1
 nav_order: 3
 ---
 
