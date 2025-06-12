@@ -1,0 +1,191 @@
+{"0": {
+    "doc": "Connecting",
+    "title": "Connecting",
+    "content": " ",
+    "url": "/hpc2/connecting.html",
+    
+    "relUrl": "/hpc2/connecting.html"
+  },"1": {
+    "doc": "Connecting",
+    "title": "On campus",
+    "content": "If you are connected to the HKUST(GZ) network, you can connect to the server using SSH. But you need to use a different port 10001 than the default 22. The IP address is 10.92.255.6. On Unix-like systems such as MacOS and Linux, you can do this directly in your Terminal app by ssh -p 10001 username@10.92.255.6. On Windows, you need to use an SSH client app, such as MobaXterm, PuTTY, or Xshell. ",
+    "url": "/hpc2/connecting.html#on-campus",
+    
+    "relUrl": "/hpc2/connecting.html#on-campus"
+  },"2": {
+    "doc": "Connecting",
+    "title": "Off campus",
+    "content": "To use the server from outside the HKUST(GZ) network, you should first connect to the HKUST(GZ) VPN. Visit https://remote.hkust-gz.edu.cn to start. Once you are connected to the HKUST(GZ) VPN, you can log in the server using SSH. Please note that you are now connected to the login node of the HPC system, not the computing nodes. The login node is used to provide login service to all users. It is fine to do light interactive work such as editing the source code, setting up experiments, or compiling the code on the login node. But please do not run CPU- or memory-intensive jobs on the login node – that will significantly degrade the performance of the login node and affect all users. You should allocate those heavy computing jobs to the computing nodes (see Running jobs for instructions). ",
+    "url": "/hpc2/connecting.html#off-campus",
+    
+    "relUrl": "/hpc2/connecting.html#off-campus"
+  },"3": {
+    "doc": "Connecting",
+    "title": "Connecting",
+    "content": " ",
+    "url": "/hpc1/connecting.html",
+    
+    "relUrl": "/hpc1/connecting.html"
+  },"4": {
+    "doc": "Connecting",
+    "title": "On campus",
+    "content": "If you are connected to the HKUST(GZ) network, you can connect to the server using SSH. The IP address is 10.120.16.38. On Unix-like systems such as MacOS and Linux, you can do this directly in your Terminal app by ssh username@10.120.16.38. On Windows, you need to use an SSH client app, such as MobaXterm, PuTTY, or Xshell. ",
+    "url": "/hpc1/connecting.html#on-campus",
+    
+    "relUrl": "/hpc1/connecting.html#on-campus"
+  },"5": {
+    "doc": "Connecting",
+    "title": "Off campus",
+    "content": "To use the server from outside the HKUST(GZ) network, you should first connect to the HKUST(GZ) VPN. Visit https://remote.hkust-gz.edu.cn to start. Once you are connected to the HKUST(GZ) VPN, you can log in the server using SSH. Please note that you are now connected to the login node of the HPC system, not the computing nodes. The login node is used to provide login service to all users. It is fine to do light interactive work such as editing the source code, setting up experiments, or compiling the code on the login node. But please do not run CPU- or memory-intensive jobs on the login node – that will significantly degrade the performance of the login node and affect all users. You should allocate those heavy computing jobs to the computing nodes (see Running jobs for instructions). ",
+    "url": "/hpc1/connecting.html#off-campus",
+    
+    "relUrl": "/hpc1/connecting.html#off-campus"
+  },"6": {
+    "doc": "Environment",
+    "title": "Environment",
+    "content": " ",
+    "url": "/hpc2/environment.html",
+    
+    "relUrl": "/hpc2/environment.html"
+  },"7": {
+    "doc": "Environment",
+    "title": "Lmod",
+    "content": "Lmod is a Lua based module system that helps manage the user environment (PATH, LD_LIBRARY_PATH etc.) through module files. It supports hierarchical MODULEPATH. We use Lmod to provide and manage different versions of libraries compiled by different combinations of compilers and MPI libraries. ",
+    "url": "/hpc2/environment.html#lmod",
+    
+    "relUrl": "/hpc2/environment.html#lmod"
+  },"8": {
+    "doc": "Environment",
+    "title": "Some useful module commands",
+    "content": "| Command | Description | . | module avail | List available modules in MODULEPATH | . | module list | List active modules in the user environment | . | module load [module] | Load a module file in the users environment | . | module unload [module] | Remove a loaded module from the user environment | . | module swap [module1] [module2] | Replace module1 with module2 | . | module purge | Remove all modules from the user environment | . | module use [-a] [path] | Prepend or Append path to MODULEPATH | . | module unuse [path] | Remove path from MODULEPATH | . Like many other commands in Linux, you can use man module or module --help to find more instructions on how to use it. See also here for a user guide for Lmod. ",
+    "url": "/hpc2/environment.html#some-useful-module-commands",
+    
+    "relUrl": "/hpc2/environment.html#some-useful-module-commands"
+  },"9": {
+    "doc": "Environment",
+    "title": "Modules on this machine",
+    "content": "On this machine, we adopt the naming convention described here and module hierarchy described here. Running module avail gives the following three levels of modules. ------------------------------- /share/apps/modules/modulefiles/mpi/intel/2023.2/impi/2021.10 ------------------------------- esmf/8.5.0 fftw/3.3.10 hdf5/1.14.3 nco/5.2.2 netcdf/4.9.2 pio/1.10.1 pnetcdf/1.12.3 ----------------------------------- /share/apps/modules/modulefiles/compiler/intel/2023.2 ----------------------------------- advisor/2023.2.0 dnnl-cpu-gomp/2023.2.0 inspector/2023.2.0 oclfpga/2023.2.0 ccl/2021.10.0 dnnl-cpu-iomp/2023.2.0 intel_ipp_ia32/2021.9.0 oclfpga/2023.2.1 (L,D) compiler-rt/2023.2.1 (L) dnnl-cpu-tbb/2023.2.0 intel_ipp_intel64/2021.9.0 openmpi/4.1 compiler-rt32/2023.2.1 dnnl/2023.2.0 intel_ippcp_ia32/2021.8.0 tbb/2021.10.0 (L) compiler/2023.2.1 (L) dpct/2023.2.0 intel_ippcp_intel64/2021.8.0 tbb32/2021.10.0 compiler32/2023.2.1 dpl/2022.2.0 itac/2021.10.0 udunits/2.2.28 dal/2023.2.0 icc/2023.2.1 mkl/2023.2.0 (L) vtune/2023.2.0 debugger/2023.2.0 icc32/2023.2.1 mkl32/2023.2.0 zlib/1.2.13 dev-utilities/2021.10.0 impi/2021.10 (L) mpi/2021.10.0 (L) ------------------------------------------- /share/apps/modules/modulefiles/core -------------------------------------------- StdEnv (L) anaconda3/2023.09-0 gcc/12.3 intel/2023.2 (L) julia/1.6.7 julia/1.9.4 (D) Where: L: Module is loaded D: Default Module . The three levels of modules from bottom to top are core modules, modules compiled with a specific compiler, and modules compiled with a specific combination of compiler/MPI, respectively. The compiler/MPI combination of intel/2023.2 and impi/2021.10 is automatically loaded when logging in the system (managed by a standard set of modules StdEnv, read more here). To use other compilers, e.g., the GNU compiler, simply run module swap intel gcc and module load openmpi. Currently, we have the GNU Compiler Collection (gcc), and Intel oneAPI Toolkits (intel) installed on the system. Combinations of intel/impi, intel/openmpi, and gcc/openmpi are supported. All libraries are compiled using these combinations of compiler/MPI. ",
+    "url": "/hpc2/environment.html#modules-on-this-machine",
+    
+    "relUrl": "/hpc2/environment.html#modules-on-this-machine"
+  },"10": {
+    "doc": "Environment",
+    "title": "Environment",
+    "content": " ",
+    "url": "/hpc1/environment.html",
+    
+    "relUrl": "/hpc1/environment.html"
+  },"11": {
+    "doc": "Environment",
+    "title": "Lmod",
+    "content": "Lmod is a Lua based module system that helps manage the user environment (PATH, LD_LIBRARY_PATH etc.) through module files. It supports hierarchical MODULEPATH. We use Lmod to provide and manage different versions of libraries compiled by different combinations of compilers and MPI libraries. ",
+    "url": "/hpc1/environment.html#lmod",
+    
+    "relUrl": "/hpc1/environment.html#lmod"
+  },"12": {
+    "doc": "Environment",
+    "title": "Some useful module commands",
+    "content": "| Command | Description | . | module avail | List available modules in MODULEPATH | . | module list | List active modules in the user environment | . | module load [module] | Load a module file in the users environment | . | module unload [module] | Remove a loaded module from the user environment | . | module swap [module1] [module2] | Replace module1 with module2 | . | module purge | Remove all modules from the user environment | . | module use [-a] [path] | Prepend or Append path to MODULEPATH | . | module unuse [path] | Remove path from MODULEPATH | . Like many other commands in Linux, you can use man module or module --help to find more instructions on how to use it. See also here for a user guide for Lmod. ",
+    "url": "/hpc1/environment.html#some-useful-module-commands",
+    
+    "relUrl": "/hpc1/environment.html#some-useful-module-commands"
+  },"13": {
+    "doc": "Environment",
+    "title": "Modules on this machine",
+    "content": "On this machine, we adopt the naming convention described here and module hierarchy described here. Running module avail gives the following three levels of modules. ------------------------------- /public/apps/module/modulefiles/mpi/gcc/12.3/openmpi/4.1 -------------------------------- esmf/8.5.0 fftw/3.3.10 hdf5/1.14.1 netcdf/4.9.2 pio/1.10.1 pnetcdf/1.12.3 ----------------------------------- /public/apps/module/modulefiles/compiler/gcc/12.3 ----------------------------------- openmpi/4.1 (L) zlib/1.2.13 ----------------------------------------- /public/apps/module/modulefiles/core ------------------------------------------ R/4.3.1 anaconda3/2023.07-2 cmake/3.27.4 (L) intel/2023.2 julia/1.9.3 (D) nvidia/23.7 StdEnv (L) cdo/2.2.1 gcc/12.3 (L) julia/1.6.7 matlab/2018a Where: L: Module is loaded D: Default Module . The three levels of modules from bottom to top are core modules, modules compiled with a specific compiler, and modules compiled with a specific combination of compiler/MPI, respectively. The compiler/MPI combination of gcc/12.3 and openmpi/4.1 is automatically loaded when logging in the system (managed by a standard set of modules StdEnv, read more here). To use other compilers, e.g., the Intel compiler, simply run module swap gcc intel and openmpi compiled with Intel compiler will automatically be swapped and reloaded. Currently, we have the GNU Compiler Collection (gcc), Intel oneAPI Toolkits (intel), and Nvidia HPC SDK (including the PGI compiler; nvidia) installed on the system, but only OpenMPI (openmpi) is supported at this moment. All libraries are compiled using these combinations of compiler/MPI. ",
+    "url": "/hpc1/environment.html#modules-on-this-machine",
+    
+    "relUrl": "/hpc1/environment.html#modules-on-this-machine"
+  },"14": {
+    "doc": "HPC2",
+    "title": "HPC2",
+    "content": " ",
+    "url": "/hpc2/",
+    
+    "relUrl": "/hpc2/"
+  },"15": {
+    "doc": "HPC2",
+    "title": "Overview",
+    "content": "This second HPC server at EESRF has 19 computing nodes connected by InfiniBand network. Two of them are large memory nodes, each of which has four Intel Xeon Gold 5318H CPUs (2.5GHz, 18 cores per CPU) and 2 TB of DDR4 memory. The rest are regular computing nodes, each of which has two Intel Xeon Platinum 8374C CPUs (2.7GHz, 36 cores per CPU) and 256GB of DDR4 memory. In total, there are 1368 CPU cores in the system. The total available storage is ~772 TB, shared by all users and mounted at /share. We currently have users’ home directory in /share/home and a shared space for common data used by multiple users (e.g., input data for CESM) in /share/project. This storage has redundancy, so we won’t lose data if one or two hard drives in the storage system fail. But there is no backup – so if you mistakenly delete something, we will not be able to retrieve it. So it is a good idea to always back up important data on your local drive. A good strategy is the so-called 3-2-1 backup rule, which means that you should have 3 copies of your data on 2 different media, with 1 copy being off-site. ",
+    "url": "/hpc2/#overview",
+    
+    "relUrl": "/hpc2/#overview"
+  },"16": {
+    "doc": "HPC1",
+    "title": "HPC1",
+    "content": " ",
+    "url": "/hpc1/",
+    
+    "relUrl": "/hpc1/"
+  },"17": {
+    "doc": "HPC1",
+    "title": "Overview",
+    "content": "This first HPC server at EESRF has 22 computing nodes connected by InfiniBand network. Each computing node has two Intel Xeon Gold 6348 CPU @ 2.60GHz (56 CPU cores per node) and 256GB of DDR4 memory. In total, there are 1232 CPU cores in the system. The total available storage is ~300TB, shared by all users and mounted at /public. We currently have users’ home directory in /public/home and a shared space for common data used by multiple users (e.g., input data for CESM) in /public/project. This storage has redundancy, so we won’t lose data if one or two hard drives in the storage system fail. But there is no backup – so if you mistakenly delete something, we will not be able to retrieve it. So it is a good idea to always back up important data on your local drive. A good strategy is the so-called 3-2-1 backup rule, which means that you should have 3 copies of your data on 2 different media, with 1 copy being off-site. ",
+    "url": "/hpc1/#overview",
+    
+    "relUrl": "/hpc1/#overview"
+  },"18": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"19": {
+    "doc": "Running jobs",
+    "title": "Running jobs",
+    "content": " ",
+    "url": "/hpc2/running_jobs.html",
+    
+    "relUrl": "/hpc2/running_jobs.html"
+  },"20": {
+    "doc": "Running jobs",
+    "title": "Slurm",
+    "content": "We use Slurm for cluster management and job scheduling. See here for a more detailed user guide of Slurm. ",
+    "url": "/hpc2/running_jobs.html#slurm",
+    
+    "relUrl": "/hpc2/running_jobs.html#slurm"
+  },"21": {
+    "doc": "Running jobs",
+    "title": "Submitting jobs",
+    "content": "As mentioned here, you are not allowed to directly run jobs on the login node. Instead, you may submit a job to the computing nodes via Slurm. There are basically two ways you can submit a job as briefly introduced below. Batch jobs . You can use sbatch to submit a job script for later execution. A typical job script begins with a shebang line (e.g., #!/bin/bash) followed by lines of Slurm directives each begins with #SBATCH. These directives tell Slurm some basic information about the job, such as a job name, a filename to save output and error message, the computational resource a job requires, including the number of nodes and CPU cores, and the wall time (job execution time in real world, as would be seen on a clock mounted on the wall, after which the job will be cancelled automatically), etc. After these directives, users then include the commands to be run in the script, including the setting of environment variables and the setup of the job. This is the recommended way to submit a job. Below is an example job script to submit a test case of MPAS-Ocean. #!/bin/bash #SBATCH --job-name=MPASO # job name ('MPASO' in this example) #SBATCH --output=MPASO.%j # save output message to MPASO.%j where %j is the job ID assigned by Slurm #SBATCH --nodes=1 # number of node requested (1 in this example) #SBATCH --ntasks-per-node=16 # number of MPI tasks per node (16 in this example) #SBATCH --time=1:00:00 # wall time requested (one hour in this example) # load necessary modules module purge module load intel openmpi zlib hdf5 pnetcdf netcdf pio fftw # set environment variables for MPAS-Ocean export NETCDF=${NETCDF_ROOT} export PNETCDF=${PNETCDF_ROOT} export PIO=${PIO_ROOT} export FFTW=${FFTW_ROOT} export CORE=ocean export AUTOCLEAN=true export USE_PIO2=false # go to the case directory and run the case case_path=\"${HOME}/scratch/mpas/ocean/mixed_layer_eddy/0.6km/single_front/forward\" cd ${case_path} mpirun -n ${SLURM_NTASKS} ./ocean_model -n namelist.ocean -s streams.ocean . Interactive jobs . You can also use salloc to allocate resources for an interactive job so that you can SSH to the allocated computing node and run the job interactively as you would do on your personal computer. To allocate one node for one hour, run . &gt; salloc --nodes=1 --time=1:00:00 salloc: Granted job allocation 13804 salloc: Waiting for resource configuration salloc: Nodes node03 are ready for job . As shown in the prompt message above, node03 is allocated. You can then SSH to the allocated node by ssh node03 and run your job interactively. This is usually used for testing and debugging. Note that you will not be able to directly SSH to a computing node without an allocation. ",
+    "url": "/hpc2/running_jobs.html#submitting-jobs",
+    
+    "relUrl": "/hpc2/running_jobs.html#submitting-jobs"
+  },"22": {
+    "doc": "Running jobs",
+    "title": "Other useful Slurm commands",
+    "content": ". | sinfo shows the state of partitions and nodes managed by Slurm. For example, to check the state of all 19 nodes, run | . &gt; sinfo PARTITION AVAIL TIMELIMIT NODES STATE NODELIST x86_64* up infinite 1 mix node01 x86_64* up infinite 16 idle node[02-17] x86_64_02 up infinite 2 idle node[18-19] . We have two partitions: x86_64 for regular computing nodes and x86_64_02 for large memory nodes. sinfo has a wide variety of filtering, sorting, and formatting options. Run man sinfo to learn more. | squeue shows the state of jobs or job steps. For example, to see the state of the MPAS-Ocean job, run | . &gt; squeue JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON) 13802 x86_64 MPASO qingli R 0:05 1 node02 . It also has a wide variety of filtering, sorting, and formatting options. By default, it reports the running jobs in priority order and then the pending jobs in priority order. Run man squeue to learn more. | scancel is used to cancel a pending or running job or job step. For example, to cancel the above job with job ID of 13802, run | . &gt; scancel 13802 . ",
+    "url": "/hpc2/running_jobs.html#other-useful-slurm-commands",
+    
+    "relUrl": "/hpc2/running_jobs.html#other-useful-slurm-commands"
+  },"23": {
+    "doc": "Running jobs",
+    "title": "Running jobs",
+    "content": " ",
+    "url": "/hpc1/running_jobs.html",
+    
+    "relUrl": "/hpc1/running_jobs.html"
+  },"24": {
+    "doc": "Running jobs",
+    "title": "Slurm",
+    "content": "We use Slurm for cluster management and job scheduling. See here for a more detailed user guide of Slurm. ",
+    "url": "/hpc1/running_jobs.html#slurm",
+    
+    "relUrl": "/hpc1/running_jobs.html#slurm"
+  },"25": {
+    "doc": "Running jobs",
+    "title": "Submitting jobs",
+    "content": "As mentioned here, you are not allowed to directly run jobs on the login node. Instead, you may submit a job to the computing nodes via Slurm. There are basically two ways you can submit a job as briefly introduced below. Batch jobs . You can use sbatch to submit a job script for later execution. A typical job script begins with a shebang line (e.g., #!/bin/bash) followed by lines of Slurm directives each begins with #SBATCH. These directives tell Slurm some basic information about the job, such as a job name, a filename to save output and error message, the computational resource a job requires, including the number of nodes and CPU cores, and the wall time (job execution time in real world, as would be seen on a clock mounted on the wall, after which the job will be cancelled automatically), etc. After these directives, users then include the commands to be run in the script, including the setting of environment variables and the setup of the job. This is the recommended way to submit a job. Below is an example job script to submit a test case of MPAS-Ocean. #!/bin/bash #SBATCH --job-name=MPASO # job name ('MPASO' in this example) #SBATCH --output=MPASO.%j # save output message to MPASO.%j where %j is the job ID assigned by Slurm #SBATCH --nodes=1 # number of node requested (1 in this example) #SBATCH --ntasks-per-node=16 # number of MPI tasks per node (16 in this example) #SBATCH --time=1:00:00 # wall time requested (one hour in this example) # load necessary modules module purge module load intel openmpi zlib hdf5 pnetcdf netcdf pio fftw # set environment variables for MPAS-Ocean export NETCDF=${NETCDF_ROOT} export PNETCDF=${PNETCDF_ROOT} export PIO=${PIO_ROOT} export FFTW=${FFTW_ROOT} export CORE=ocean export AUTOCLEAN=true export USE_PIO2=false # go to the case directory and run the case case_path=\"${HOME}/scratch/mpas/ocean/mixed_layer_eddy/0.6km/single_front/forward\" cd ${case_path} mpirun -n ${SLURM_NTASKS} ./ocean_model -n namelist.ocean -s streams.ocean . Interactive jobs . You can also use salloc to allocate resources for an interactive job so that you can SSH to the allocated computing node and run the job interactively as you would do on your personal computer. To allocate one node for one hour, run . &gt; salloc --nodes=1 --time=1:00:00 salloc: Granted job allocation 13804 salloc: Waiting for resource configuration salloc: Nodes node03 are ready for job . As shown in the prompt message above, node03 is allocated. You can then SSH to the allocated node by ssh node03 and run your job interactively. This is usually used for testing and debugging. Note that you will not be able to directly SSH to a computing node without an allocation. If you try to SSH to a computing node without first requesting it using salloc, your access will be denied and you see something like the following. &gt; ssh node04 Access denied by pam_slurm_adopt: you have no active jobs on this node Connection closed by 110.1.1.104 port 22 . ",
+    "url": "/hpc1/running_jobs.html#submitting-jobs",
+    
+    "relUrl": "/hpc1/running_jobs.html#submitting-jobs"
+  },"26": {
+    "doc": "Running jobs",
+    "title": "Other useful Slurm commands",
+    "content": ". | sinfo shows the state of partitions and nodes managed by Slurm. For example, to check the state of all 22 nodes in partition1 (we currently only have one partition), run | . &gt; sinfo PARTITION AVAIL TIMELIMIT NODES STATE NODELIST partition1* up infinite 1 alloc node01 partition1* up infinite 21 idle node[02-22] . It has a wide variety of filtering, sorting, and formatting options. Run man sinfo to learn more. | squeue shows the state of jobs or job steps. For example, to see the state of the MPAS-Ocean job, run | . &gt; squeue JOBID PARTITION NAME USER ST TIME NODES NODELIST(REASON) 13802 partition MPASO qingli R 0:05 1 node02 . It also has a wide variety of filtering, sorting, and formatting options. By default, it reports the running jobs in priority order and then the pending jobs in priority order. Run man squeue to learn more. | scancel is used to cancel a pending or running job or job step. For example, to cancel the above job with job ID of 13802, run | . &gt; scancel 13802 . ",
+    "url": "/hpc1/running_jobs.html#other-useful-slurm-commands",
+    
+    "relUrl": "/hpc1/running_jobs.html#other-useful-slurm-commands"
+  }
+}
