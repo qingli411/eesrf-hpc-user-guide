@@ -64,6 +64,10 @@ Access denied by pam_slurm_adopt: you have no active jobs on this node
 Connection closed by 110.1.1.104 port 22
 ```
 
+If you encounter issues when SSHing to the allocated node, you can try the following command to start a `bash` shell on the allocated node.
+```
+> srun --nodes=1 --time=1:00:00 --pty bash
+```
 
 ## Other useful Slurm commands
 

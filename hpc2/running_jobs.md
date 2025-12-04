@@ -59,6 +59,11 @@ As shown in the prompt message above, `node03` is allocated. You can then SSH to
 
 Note that you will not be able to directly SSH to a computing node without an allocation.
 
+Alternatively, you can start an interactive job by running
+```
+> srun --nodes=1 --time=1:00:00 --pty bash
+```
+This will allocate a computing node and start a `bash` shell there so that you don't need to SSH to it.
 
 ## Other useful Slurm commands
 
