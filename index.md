@@ -8,5 +8,5 @@ nav_order: 1
 
 Here you will find a brief user guide for the two HPCs hosted at EESRF.
 
-* [HPC1](HPC1/index.html)
-* [HPC2](HPC2/index.html)
+* [HPC1](hpc1/)
+* [HPC2](hpc2/)
